@@ -1,0 +1,740 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ============ Navigation start =============  */
+.navigation{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color:#1f5f5b;
+    float: left;
+    /* box-shadow: 2px 2px 10px rgb(42, 116, 74) ; */
+}
+.logo{
+    width: 25%;
+    height: 70px;
+    float:left ;
+    font-size: 45px;
+    line-height: 70px;
+}
+.logo img{
+    width: 25%px;
+    height: 80px;
+    line-height: 80px;
+    padding-left: 20px;
+}
+.menu-item{
+    width: 60%;
+    height: 70px;
+    float:left ;
+}
+.menu-item ul {
+    padding-left: 15%;
+}
+.menu-item ul li{
+    float: left;
+    list-style: none; 
+    line-height: 70px;
+    font-family: roboto;
+    font-size:22px;
+    font-weight: bold;
+    padding: 0px 35px;
+    transition: 0.4s;
+}
+.menu-item ul li:hover{
+    background-color: #34ad79;
+}
+.menu-item ul li a{
+    text-decoration: none;
+    color: white;
+}
+.responsive-icon{
+    width: 10%;
+    height: 70px;
+    float:left ;
+    display: none;
+    box-sizing: border-box;
+}
+.responsive-icon i{
+    font-size: 40px;
+    line-height: 70px;
+}
+/* ====== use media screen for responsive navigaton ======= */
+@media screen and (max-width:700px){
+    .logo{
+        width: 85%;
+    }
+    .responsive-icon{
+        display: inline-block;
+    }
+    .menu-item{
+        display: none;
+    }  
+}
+/* =========== Navigation close ============  */
+
+/* =========== Mobile responsive navigation css =========== */
+.mobile-menu-item{
+ 
+}
+.mobile-menu-item ul {
+    width: 100%;
+    background-color: whitesmoke;
+}
+.mobile-menu-item ul li{
+    list-style: none; 
+    line-height: 70px;
+    font-family: roboto;
+    font-size:22px;
+    font-weight: bold;
+    padding: 0px 25px;
+}
+.mobile-menu-item ul li a{
+    text-decoration: none;
+    color: Black;
+     
+}
+
+
+
+
+
+
+
+/*  ================= MAIN CONTAINER START ================== */
+
+.main-container{
+    /* background-color: rgb(32, 36, 45); */
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top,rgba(32, 36, 45, 0.8),rgba(32, 36, 45,0.7)), url("./image/vector-bg/vector-6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    padding-top: 120px;
+    width: 80%;
+    margin: auto;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-about{
+
+}
+.home-about h2{
+    font-size: 30px;
+    font-weight: 500px;
+    font-family: roboto;
+    color: #EDF1F6;
+    padding-top: 20px;
+}
+.home-about h2 span{
+    color:#53cf99 ;
+}
+.home-about h1{
+    font-size: 50px;
+    font-weight:bold;
+    font-family: roboto;
+    color:#53cf99 ;
+    padding-top: 10px;
+}
+.home-about p{
+    width: 650px;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 500px;
+    font-family: roboto;
+    color: #EDF1F6;
+}
+.home-about .talk-btn{
+    margin-top: 30px;
+    padding: 10px 15px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 23px;
+    font-weight: 500;
+    background-color: #34ad79;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home-about .talk-btn a{
+    text-decoration: none;
+    color: #EDF1F6;
+}
+.home-about .socail-home{
+    padding-top: 40px;
+    display: flex;
+    justify-content: start;
+    column-gap: 20px;
+}
+.home-about .socail-home a {
+    padding: 8px;
+    color: #EDF1F6;
+    font-size: 20px;
+    background-color: #34ad79;
+    clip-path: polygon(50% 0%, 100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+    transition: 0.4s;
+}
+.home-about .socail-home a:hover{
+    transform: translateY(-4px);
+}
+.home-image{
+
+}
+.home-image img{
+    width: 450px;
+    height:auto;
+}
+/*  ================= MAIN CONTAINER CLOSE ================== */
+
+
+
+
+
+
+/* <!-- ====================== ABOUT SECTION START ======================== --> */
+.about-section{
+        width: 100%;
+        height: 600px;
+        /* background: linear-gradient(to top,rgba(31, 34, 41, 0.8),rgba(40, 46, 57, 0.8)), url(""); */
+        background-color: #292e3b;
+        /* background-color: #323846; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+}
+    .about-area{
+        padding-top: 50px;
+        width: 80%;
+        margin: auto;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-image{
+        /* padding-right: 20px; */
+    }
+    .about-image img{
+        width: 470px;
+        height:auto;
+    }
+    .about-description{
+        padding-left: 40px;
+    }
+    .about-description h2{
+        font-size: 30px;
+        font-weight: 500px;
+        font-family: roboto;
+        color: #EDF1F6;
+        padding-top: 20px;
+    }
+    .about-description h1{
+        font-size: 50px;
+        font-weight:bold;
+        font-family: roboto;
+        color: #EDF1F6;
+        padding-top: 10px;
+    }
+    .about-description h2 span{
+        color:#53cf99 ;
+    }
+    .about-description p{
+        width: 640px;
+        padding-top: 20px;
+        font-size: 25px;
+        font-weight: 500px;
+        font-family: roboto;
+        color: #EDF1F6;
+    }
+    .about-description button{
+        margin-top: 30px;
+        padding: 15px 18px;
+        border: 0px;
+        border-radius: 10px;
+        font-size: 23px;
+        font-weight: 600;
+        color: #EDF1F6;
+        background-color: #34ad79;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+/* <!-- ====================== ABOUT SECTION CLOSE ======================== --> */
+
+
+
+
+
+
+
+/* <!-- ====================== SKILL SECTION START ======================== --> */
+.skill-section{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to top,rgba(32, 36, 45, 0.9),rgba(32, 36, 45, 0.9)), url("./Image/vector-bg/vector-4.jpg");
+    /* background-color: rgb(32, 36, 45); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.skill-area{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.skill-descripton{
+
+
+}
+.skill-descripton h2{
+    font-size: 23px;
+    font-weight: 500px;
+    font-family: roboto;
+    color: #EDF1F6;
+    padding-top: 20px;
+}
+.skill-descripton h2 span{
+    color:#53cf99 ;
+}
+.skill-descripton h1{
+    font-size: 40px;
+    font-weight:bold;
+    font-family: roboto;
+    color: #EDF1F6;
+    padding-top: 10px;
+}
+.skill-descripton p{
+    width: 500px;
+    padding-top: 20px;
+    font-size: 23px;
+    font-weight: 500px;
+    font-family: roboto;
+    color: #d0d3d6;
+}
+.skill-descripton button{
+    margin-top: 30px;
+    padding: 12px 15px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #EDF1F6;
+    background-color: #34ad79;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.skill-list{
+display: flex;
+flex-wrap: wrap;
+
+}
+.skill-list ul li{
+    padding: 10px 20px;
+    list-style: none;
+    font-size: 23px;
+    font-weight: 600px;
+    font-family: roboto;
+    color: #EDF1F6;
+}
+.skill-list ul li span{
+    color:#53cf99 ;
+}
+/* <!-- ====================== SKILL SECTION CLOSE ======================== --> */
+
+
+
+
+
+
+
+
+
+
+/* <!-- ====================== SERVICES SECTION START ======================--> */
+.services-section{
+    width: 100%;
+    height: 500px;
+    background-color: #323846;
+    text-align: center;
+}
+.services-head h2{
+    font-size: 23px;
+    font-weight: 500px;
+    font-family: roboto;
+    color: #EDF1F6;
+    padding-top: 40px;
+}
+.services-head h2 span{
+    color:#53cf99 ;
+}
+.services-head h1{
+    font-size: 40px;
+    font-weight:bold;
+    font-family: roboto;
+    color: #EDF1F6;
+    padding-top: 10px;
+}
+.services-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 350px;
+    /* background-color: #34ad79; */
+    margin: auto;
+
+}
+.services-box{
+    padding-top: 16px;
+    width: 400px;
+    height: 260px;
+    background-color: #20242D;
+    border-radius: 15px;
+}
+.services-box img{
+    width: 70px;
+    height: auto;
+}
+.services-box div {
+    padding: 12px;
+}
+.services-box div h1{
+    font-size: 30px;
+    font-weight: 500px;
+    font-family: roboto;
+    color: #EDF1F6;
+}
+.services-box div p{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 500px;
+    font-family: roboto;
+    color: #d0d3d6;
+}
+
+
+/* <!-- ====================== SERVICES SECTION CLOSE ======================--> */
+
+
+
+
+
+
+
+
+/* <!-- ====================== CONTACT ME SECTION START ======================--> */
+
+.contact-section{
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(to top,rgba(32, 36, 45, 0.8),rgba(32, 36, 45, 0.8)), url("./Image/vector-bg/vector-4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+.contact-main{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+}
+.contact-head{
+
+}
+.contact-head h2{
+    font-size: 23px;
+    font-weight: 500px;
+    font-family: roboto;
+    color: #EDF1F6;
+    padding-top: 40px;
+}
+.contact-head h2 span{
+    color:#53cf99 ;
+}
+.contact-head h1{
+    font-size: 40px;
+    font-weight:bold;
+    font-family: roboto;
+    color: #EDF1F6;
+    padding-top: 10px;
+}
+.contact-area{
+    padding-top: 20px;
+    width: 60%;
+    height: 280PX;
+    margin: auto;
+}
+
+.contact-area .up-input{
+    width:100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-area .up-input .up-txt{
+    height: 45px;
+    width: 46%;
+    padding: 0px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 0;
+    background-color:#323846;
+}
+.contact-area .message{
+    margin-top: 10px;
+    width: 97.3%;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 0;
+    padding: 10px 10px;
+    padding-bottom: 140px;
+    background-color:#323846;
+}
+.contact-main .send-btn{
+    /* margin-top: 10px; */
+    padding: 12px 15px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #EDF1F6;
+    background-color: #34ad79;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* <!-- ====================== CONTACT ME SECTION CLOSE ======================--> */
+
+
+
+
+
+
+
+/* <!-- ====================== FOOTER SECTION START ======================--> */
+
+.footer-section{
+    width: 100%;
+    height: 530px;
+    background-color: #292e3b;
+    /* background-color: aqua; */
+}
+.footer-area{
+    color: #d0d3d6;
+    width: 100%;
+    height: 400px;
+    display: flex;
+
+}
+     /* ======== 1ST PART LOGO SECTION START ======== */
+.brand{
+    width: 50%;
+    height: 280px;
+    /* box-shadow: 1px 1px 10px #2e323b; */
+    padding-top: 50px;
+    padding-left: 50px;
+    background-color:#20242D ;
+
+    }
+    .brand h1{
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #d6dce4;
+    }
+    .brand span{
+        color: #34ad79;
+    }
+    .brand .brand-descrip{
+        width: 600px;
+        color: #c5d3e4;
+        padding-top: 18px;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Aria;
+    }
+     /* ======== LOGO SECTION CLOSE ======== */
+    
+
+     
+/* ================FOOTER CONTACT START================== */
+
+.footer-contact{
+    margin-top: 30px;;
+}
+.double-contact{
+    display: flex;
+    padding-left: 0;
+
+
+}
+.contact-flex{
+    display: flex;
+    justify-content: center;
+    /* margin-left: 20px; */
+
+}
+.contact-flex div i{
+    font-size: 50px;
+    color: #53cf99;
+
+}
+.contact-flex div p{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 4px 5px;
+    color: #c5d3e4;
+}
+.contact-flex .bold{
+    font-size: 22px;
+    font-weight: 600;
+}
+.left{
+    padding-left: 30px;
+}
+/* ================FOOTER CONTACT CLOSE================== */
+
+
+
+
+
+/* ================2ND PART NESLETTER START================== */
+
+.newsletter{
+    width: 50%;
+    height: 280px;
+    background: linear-gradient(to top,rgba(34, 36, 45, 0.6),rgba(32, 36, 45, 0.6)), url("./Image/vector-bg/vector-8.jpg");
+    padding-top: 50px;
+    padding-left: 50px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    }
+.newsletter h1{
+    color: #d6dce4;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.newsletter p{
+     padding-top: 18px;
+     width: 550px;
+     font-size: 22px;
+     font-weight: 400;
+     color: #d0d3d6;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Aria;
+}  
+
+ 
+    /* ============ NEWSLETTER EMAIL BUTTON*/
+.email-send{
+    margin-top: 50px;
+}
+.email-send .input-email{
+    width:400px;
+    height: 30px;
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 10px;
+    background-color: #d0d3d6;
+    
+    }
+.Send-btn{
+            margin-top: 4px;
+            padding: 8px 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:#34ad79;
+            color:#c5d3e4;
+            font-size: 18px;
+            font-weight: 600;
+    }
+/* ================2ND PART NESLETTER CLOSE================== */
+
+  
+
+    
+/* ================FOOTER MENU START ================== */
+.footer-menu{
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+    /* background-color:#34ad79 ; */
+}
+.all-menu {
+    text-align: center;
+    margin-top: -60px;
+}
+.all-menu a{
+     text-decoration: none;
+     font-size:18px;    
+     font-weight: 600;  
+     font-family: roboto;
+     padding: 10px 50px;
+     color: #c5d3e4;
+     transition: 0.4s;
+}
+.all-menu a:hover{
+    background-color: #34ad79;
+
+}
+/* ================ FOOTER MENU CLOSE ================== */
+
+    
+
+
+
+/* ================ SOCAIL MENU START ================== */
+.socail-media{
+ padding-top: 15px;
+    text-align: center;
+ 
+ }
+.media-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-flex i{
+    text-align: center;
+    font-size: 35px;
+    margin-left: 18px;
+    color: #34ad79;
+}
+/* ================ SOCAIL MENU CLOSE  ================== */
+
+
+
+/* ================ COPYRIGHT START ================== */
+.copyright{
+    padding-top: 16px;
+    color: #d6dce4;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.copyright span{
+    color: #34ad79;
+    font-size: 24px;
+}
+/* ================ COPYRIGHT CLOSE ================== */
+
+/* <!-- ====================== FOOTER SECTION START ======================--> */
+    
+
+
+
